@@ -1,0 +1,23 @@
+{
+  "GardenResources":[
+                     {
+                        "resource"      : "tap1",
+                        "pinNumber"     : 17,
+                        "type"          : "Tap",
+                        "defaultState"  : "CLOSED",
+                        "status"        : "ENABLED",
+                        "events"        : [
+                                           {
+                                             "date" : "*",
+                                             "time" : "16:57",
+                                             "state" : "OPEN"
+                                           },
+                                           {
+                                             "date" : "*",
+                                             "time" : "16:59",
+                                             "state" : "CLOSED"
+                                           }
+                                          ]
+                      }
+                     ]
+}
