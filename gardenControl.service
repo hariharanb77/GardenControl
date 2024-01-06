@@ -1,0 +1,10 @@
+[Unit]
+Description=Garden control service.
+
+[Service]
+User=pi
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/hariharan/GardenControl/gardenControl.py
+
+[Install]
+WantedBy=multi-user.target

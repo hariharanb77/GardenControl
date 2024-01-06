@@ -5,6 +5,7 @@ from tapController import TapController
 import json
 import schedule
 import time
+import daemon
 
 resources = []
 
@@ -23,13 +24,14 @@ def do_main_program():
 
     while(True):
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(60)
+        print("service running")
 
-do_main_program()
+#do_main_program()
     
 
 
 
-#output = open(config.logFile, 'w+')
-#with daemon.DaemonContext(stdout=output, stderr=output):
-#    do_main_program()
+output = open(config.logFile, 'w+')
+with daemon.DaemonContext(stdout=output, stderr=output):
+    do_main_program()
