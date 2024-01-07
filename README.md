@@ -13,18 +13,20 @@ the service with the following commands
 
 ```
 > sudo systemctl start gardenControl
+```
+```
 > sudo systemctl stop gardenControl
 ```
 
 To start the service as part of system startup automatically, use the following command
-'''
+```
 > sudo systemctl enable gardenControl
-'''
+```
 
 Use the following command to check the status of the service
-'''
+```
 > sudo systemctl status gardenControl
-'''
+```
 
 ## Configuration
 Update the **resourceConfiguratoin.json** file to control when to change the status of your resource.
